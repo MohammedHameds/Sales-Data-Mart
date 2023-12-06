@@ -4,6 +4,8 @@ Adventure Works Data Warehouse project (Sales data mart) using SQL and SSIS
 ## Overview
 The AdventureWorks2014 Sales Data Mart Project is a powerful data solution built on SQL Server and SQL Server Integration Services (SSIS). It efficiently extracts, transforms, and loads data from SQL Server into a star schema-based data model.
 
+## Data Mart
+A data mart is a specialized subset of a data warehouse focused on a specific functional area or department within an organization. It provides a simplified and targeted view of data, addressing specific reporting and analytical needs. Data marts are smaller in scale and scope, typically holding relevant data for a specific group of users, such as sales, marketing, or finance. They are organized around specific subjects, such as sales, customer data, or product information, and are structured, transformed, and optimized for efficient querying and analysis within the domain.
 
 ## Data Sources
 
@@ -43,7 +45,7 @@ This star schema optimizes data retrieval for efficient insights.
 ![star schema](Images/Star%20schema.jpg)
 
 ## ETL 
-The ETL process orchestrates the movement and transformation of data for optimal integration into the star schema.
+The ETL process is comprised of 3 steps that enable data integration from source to destination: data extraction, data transformation, and data loading.
 
 
 #### 1. Dimension Product
@@ -85,3 +87,23 @@ Data can be loaded from the source to the destination in two ways:
 ![dim date img](/Images/Incremental%20load%201.jpg)
 
 ![dim date img](/Images/Incremental%20load%202.jpg)
+
+## Project Results 
+
+The Sales Data Mart Project delivers significant results and impact:
+
+- **Efficient Data Access:** Quick retrieval of crucial sales data.
+
+- **Granular Analysis:** Detailed insights into products, customers, time, and territories.
+
+- **Adaptable Data Management:** Utilizes Full Load and Incremental Load strategies.
+
+- **Decision-Making Empowerment:** Informs strategic decisions through comprehensive sales data.
+
+- **Resource Allocation:** Allocates resources effectively based on insightful sales trends.
+
+- **Enhanced Visualization:** Structured data model enables impactful data visualization, enhancing interpretability.
+
+## References
+- [ Adventureworks2014](https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms)
+- [Sales data mart using SSIS](https://www.youtube.com/watch?v=ZNAX6LwoTDY&list=PLcAbhg_RWLaLUaYpAAvOLu2hlyVgZlRjb&pp=iAQB)
